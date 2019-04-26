@@ -19,6 +19,7 @@ public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
     private JdbcTemplate jdbcTemplate;
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
+        System.out.println("I AM PUSGING TO TEHET DBBBB");
         jdbcTemplate.execute("Create table if not exists INPUT_POSTS_FAKE ( id numeric ,name varchar(255));");
         jdbcTemplate.execute("Create table if not exists COUNTRY_FAKE (country_i serial,name text, country_code text, population numeric, crte_ts timestamp default now());");
     }
