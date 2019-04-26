@@ -29,8 +29,8 @@ public class ActiveMQConfiguration {
     public ActiveMQConnectionFactory activeMQConnectionFactory(){
         ActiveMQConnectionFactory activeMQConnectionFactory = new ActiveMQConnectionFactory();
         activeMQConnectionFactory.setBrokerURL(environment.getProperty("spring.activemq.brokerUrl"));
-        activeMQConnectionFactory.setPassword(environment.getProperty("spring.activemq.password"));
-        activeMQConnectionFactory.setUserName(environment.getProperty("spring.activemq.user"));
+        activeMQConnectionFactory.setPassword("t57Ahv6V");
+        activeMQConnectionFactory.setUserName("userQ5D");
         activeMQConnectionFactory.setTrustAllPackages(true);
         return activeMQConnectionFactory;
     }
