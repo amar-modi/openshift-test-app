@@ -11,6 +11,13 @@ spring:
     username: openshiftmongo
     password: openshiftpass
     database: sampledb
+  activemq:
+    brokerUrl: tcp://172.17.0.12:61616
+    user: admin
+    password: admin
+    packages.trust-all: true
+
+
   #    openshiftpassadmin
 #  Username: openshiftmongo
 #  Password: openshiftpass
