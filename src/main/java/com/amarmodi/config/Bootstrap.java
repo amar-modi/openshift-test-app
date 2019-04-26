@@ -12,10 +12,6 @@ import javax.sql.DataSource;
 public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
     @Autowired
-    private DataSource dataSource;
-
-
-    @Autowired
     private JdbcTemplate jdbcTemplate;
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
@@ -25,5 +21,7 @@ public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
 //        SELECT version();
         String s = jdbcTemplate.queryForObject("SELECT version();", String.class);
         System.out.println("The version of this db is " + s);
+
+
     }
 }

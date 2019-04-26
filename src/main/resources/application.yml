@@ -4,3 +4,15 @@ spring:
     url: jdbc:postgresql://172.30.216.145:5432/sampledb
     username: openshiftuser
     password: openshiftpass
+  mongodb:
+    host: localhost
+    port: 27017
+    authenticationDatabase: admin
+    username: openshiftmongo
+    password: openshiftpass
+    database: sampledb
+  #    openshiftpassadmin
+#  Username: openshiftmongo
+#  Password: openshiftpass
+#  Database Name: sampledb
+#  Connection URL: mongodb://openshiftmongo:openshiftpass@mongodb/sampledb
