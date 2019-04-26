@@ -12,7 +12,7 @@ spring:
     password: openshiftpass
     database: sampledb
   activemq:
-    brokerUrl: tcp://172.17.0.12:61616
+    brokerUrl: tcp://172.17.0.13:5672
     user: admin
     password: admin
     packages.trust-all: true
