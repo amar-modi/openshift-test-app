@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://172.30.216.145:5432/sampledb
+    username: openshiftuser
+    password: openshiftpass
