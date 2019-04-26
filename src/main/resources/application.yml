@@ -12,7 +12,7 @@ spring:
     password: openshiftpass
     database: sampledb
   activemq:
-    brokerUrl: tcp://broker123-amq-tcp-first-redhat-proj.192.168.99.105.nip.io
+    brokerUrl: tcp://broker123-amq-tcp-first-redhat-proj.192.168.99.105.nip.io:443
     user: userQ5D
     password: t57Ahv6V
     packages.trust-all: true
