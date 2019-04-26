@@ -10,10 +10,10 @@ public class MongoDBPostRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        from("{{mongo.postRoute}}")
-                .log("The body for the  insert is : ${body}")
-                .to("{{mongo.insertInputPost}}")
-                .setHeader(Exchange.HTTP_RESPONSE_CODE, constant(201));
+//        from("{{mongo.postRoute}}")
+//                .log("The body for the  insert is : ${body}")
+//                .to("{{mongo.insertInputPost}}")
+//                .setHeader(Exchange.HTTP_RESPONSE_CODE, constant(201));
 
     }
 }
